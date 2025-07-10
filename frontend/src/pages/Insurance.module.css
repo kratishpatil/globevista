@@ -1,0 +1,46 @@
+.insurancePage {
+  max-width: 700px;
+  margin: 2.5rem auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 2.5rem 2rem;
+  animation: fadeIn 0.5s;
+}
+.title {
+  color: #003366;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.intro {
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.section {
+  margin-bottom: 2rem;
+}
+.section h3 {
+  color: #003366;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+ul {
+  padding-left: 1.2rem;
+  color: #003366;
+}
+ul li {
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+a {
+  color: #ffd600;
+  text-decoration: underline;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: none; }
+} 

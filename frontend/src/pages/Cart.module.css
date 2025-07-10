@@ -1,0 +1,223 @@
+.cartPage {
+  min-height: 70vh;
+  background: #f7f9fb;
+  animation: fadeIn 0.5s;
+}
+
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 2rem 2.5rem;
+}
+
+.title {
+  color: var(--primary-blue, #003366);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.empty {
+  color: #888;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+.cartList {
+  margin-bottom: 2rem;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f4fa;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  transition: box-shadow 0.2s;
+}
+.cartItem:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.details {
+  flex: 1;
+}
+.destination {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-blue, #003366);
+}
+.airline {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.2rem;
+}
+.info {
+  font-size: 0.95rem;
+  color: #444;
+}
+.info span {
+  font-weight: 600;
+  color: var(--accent-yellow, #ffd600);
+}
+
+.removeBtn {
+  background: #fff3cd;
+  color: #b8860b;
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-left: 1.5rem;
+}
+.removeBtn:hover {
+  background: #ffe066;
+  color: #856404;
+}
+
+.bookingForm {
+  background: #f7f9fb;
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bookingForm h3 {
+  color: var(--primary-blue, #003366);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.input {
+  width: 90%;
+  max-width: 350px;
+  margin-bottom: 1rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid #cfd8dc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #fff;
+  color: #003366;
+  transition: border 0.2s;
+}
+.input:focus {
+  border: 1.5px solid var(--primary-blue, #003366);
+  outline: none;
+}
+.bookAllBtn {
+  background: var(--primary-blue, #003366);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.7rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.bookAllBtn:hover:not(:disabled) {
+  background: #0056b3;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.bookAllBtn:disabled {
+  background: #b0bec5;
+  color: #eee;
+  cursor: not-allowed;
+}
+.error {
+  color: #b71c1c;
+  background: #ffebee;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+}
+.confirmation {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #e3fcec;
+  border-radius: 12px;
+  margin: 3rem auto 0 auto;
+  max-width: 500px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  animation: fadeIn 0.7s;
+}
+.confirmation h2 {
+  color: #388e3c;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.confirmation p {
+  color: #333;
+  font-size: 1.1rem;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: none; }
+}
+
+.paymentModal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s;
+}
+.paymentForm {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  padding: 2.5rem 2rem 2rem 2rem;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.4s;
+}
+.paymentForm h3 {
+  color: var(--primary-blue, #003366);
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+.payBtn {
+  background: linear-gradient(90deg, #ffd600 0%, #ffb300 100%);
+  color: #222b3a;
+  border: none;
+  border-radius: 12px;
+  padding: 0.7rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.7rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(255, 214, 0, 0.10);
+}
+.payBtn:hover:not(:disabled) {
+  background: linear-gradient(90deg, #ffe066 0%, #ffd600 100%);
+  color: #003366;
+  box-shadow: 0 4px 16px rgba(255, 214, 0, 0.18);
+}
+.payBtn:disabled {
+  background: #e0e0e0;
+  color: #aaa;
+  cursor: not-allowed;
+  opacity: 0.7;
+  box-shadow: none;
+} 
