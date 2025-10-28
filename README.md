@@ -27,13 +27,11 @@ GlobeVista lets users browse and book flights, manage bookings, and explore trav
 ---
 
 ## Screenshots
-<!-- Add screenshots here -->
+<img width="1915" height="1027" alt="image" src="https://github.com/user-attachments/assets/997d660c-d956-42f6-8b57-b971e34ba7b6" />
+<img width="1918" height="958" alt="image" src="https://github.com/user-attachments/assets/e32cd539-488c-49fc-a6e6-de52ef5179f0" />
+<img width="1902" height="709" alt="image" src="https://github.com/user-attachments/assets/92f2d6f7-3095-4d80-a125-927d8df7ce2c" />
 
----
 
-## License
-MIT
 
----
 
 **Made with ❤️ for travelers and students.** 
